@@ -1,0 +1,22 @@
+*
+{
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
+}
+.content 
+{
+  width: 100vw;
+  height: 100vh;
+  display: grid;
+  grid-template-rows: 100px auto 100px;
+  grid-template-columns: 300px auto auto;
+  grid-template-areas: 
+  "N U U"
+  "N M M" 
+  "N C C";
+}
+.content * 
+{
+  border: 1px solid black;
+}

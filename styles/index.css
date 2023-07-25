@@ -3,12 +3,13 @@
   /* Fonts */
   --carlito: 'Carlito', sans-serif;
   --dm-serif: 'DM Serif Text', serif;
+  --ubuntu: 'Ubuntu', sans-serif;
   /* Colors */
   /*Primary*/ 
   --blue: #336CFB;
   /*Secondary*/ 
   --dark-grayish: #1F2022;
-  --light-grayish: #C0C1C1;
+  --light-graish: #C0C1C1;
   --white: #ffff;
   --black: #0000;
 }

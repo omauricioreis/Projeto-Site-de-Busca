@@ -1,13 +1,6 @@
 <!DOCTYPE html>
-<<<<<<< HEAD
-<html lang="pt-br">
-=======
 <html lang="pt-BR">
-<<<<<<< HEAD
->>>>>>> be5c397ca5d1af6350c113c56710db0ba79bd949
-=======
 
->>>>>>> 90e61474a791e768af9353f8da537abde2f1225b
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -17,6 +10,7 @@
   <link
     href="https://fonts.googleapis.com/css2?family=Carlito:ital,wght@0,400;0,700;1,400;1,700&family=DM+Serif+Text:ital@0;1&display=swap"
     rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;500;700&display=swap" rel="stylesheet">
   <!-- Css imports -->
   <link rel="stylesheet" href="./styles/index.css">
   <link rel="stylesheet" href="./styles/nav.css">
@@ -25,33 +19,29 @@
   <link rel="stylesheet" href="./styles/control.css">
   <!-- JavaScript imports -->
   <script src="./script/index.js" defer></script>
+  <script src="./script/Slider.js" defer></script>
   <title>MusicPlayer</title>
 </head>
 
 <body>
   <div class="content">
-<<<<<<< HEAD
     <aside class="nav"></aside>
     <div class="user">
-        <div class="user_wrapper">
-          <div class="search">
-            <input type="text" name="search" id="search" placeholder="Search">
-            <a href="#"><img src="./images/icon-magnifying glass.png" alt="pesquisa" class="icon_search"></a>
-          </div>
-
-          <div class="user-icons">
-            <img src="./images/icon-bell.png" alt="notificação">
-            <div class="user_image_arrow">
-              <img src="./images/image-perfil.png" alt="image-perfil" class="image-perfil">
-              <img src="./images/icon-arrow.png" alt="" class="icon_arrow">
-            </div>
-            <img src="./images/icon-menu-burguer.png" alt="">
-          </div>
-
+      <div class="user_wrapper">
+        <div class="search">
+          <input type="text" name="search" id="search" placeholder="Search">
+          <a href="#"><img src="./images/icon-magnifying glass.png" alt="pesquisa" class="icon_search"></a>
         </div>
-
+        <div class="user-icons">
+          <img src="./images/icon-bell.png" alt="notificação">
+          <div class="user_image_arrow">
+            <img src="./images/image-perfil.png" alt="image-perfil" class="image-perfil">
+            <img src="./images/icon-arrow.png" alt="" class="icon_arrow">
+          </div>
+          <img src="./images/icon-menu-burguer.png" alt="">
+        </div>
+      </div>
     </div>
-=======
     <aside class="nav">
       <div class="nav__wrapper">
         <div class="nav__title">
@@ -67,11 +57,11 @@
             </li>
             <li class="nav__item">
               <img src="./images/icon-song.png" alt="icon-song">
-              <a href="#">Songs</a> 
+              <a href="#">Songs</a>
             </li>
             <li class="nav__item">
               <img src="./images/icon-library.png" alt="icon-library">
-              <a href="#">Albums</a> 
+              <a href="#">Albums</a>
             </li>
             <li class="nav__item">
               <img src="./images/icon-disk.png" alt="icon-disk">
@@ -87,16 +77,16 @@
           <p>Your Playlists</p>
           <ul class="nav__list">
             <li class="nav__item">
-              <a href="#">Hits of This Summer</a> 
+              <a href="#">Hits of This Summer</a>
             </li>
             <li class="nav__item">
-              <a href="#">Classical Music</a> 
+              <a href="#">Classical Music</a>
             </li>
             <li class="nav__item">
-              <a href="#">Great Post-Hardcore</a> 
+              <a href="#">Great Post-Hardcore</a>
             </li>
             <li class="nav__item">
-              <a href="#">Chillout Mix</a> 
+              <a href="#">Chillout Mix</a>
             </li>
           </ul>
         </nav>
@@ -106,21 +96,207 @@
         </button>
       </div>
       <div class="nav__settings">
-          <ul class="nav__list">
-            <li class="nav__item">
-              <img src="./images/icon-gear.png" alt="icon-gear">
-              <a href="#">Settings</a>
-            </li>
-            <li class="nav__item">
-              <img src="./images/icon-question.png" alt="icon-question">
-              <a href="#">FAQ & Support</a> 
-            </li>
-          </ul>
+        <ul class="nav__list">
+          <li class="nav__item">
+            <img src="./images/icon-gear.png" alt="icon-gear">
+            <a href="#">Settings</a>
+          </li>
+          <li class="nav__item">
+            <img src="./images/icon-question.png" alt="icon-question">
+            <a href="#">FAQ & Support</a>
+          </li>
+        </ul>
       </div>
     </aside>
     <div class="user"></div>
->>>>>>> 90e61474a791e768af9353f8da537abde2f1225b
-    <main class="main"></main>
+    <main class="main">
+      <div class="container container--ra">
+        <h1 class="container__title">Recommended Albums</h1>
+        <div class="container__content">
+          <div id="slider1" class="slider">
+            <div class="slider__buttons slider__buttons--left">
+              <img src="./images/icon-chevron.png">
+            </div>
+            <div class="slider__buttons">
+              <img src="./images/icon-chevron.png">
+            </div>
+            <div class="slider__cards">
+              <div class="slider__card">
+                <div class="slider__image">
+                  <img src="./images/8dabb43e97feaa0cd847351431ccaa5bf0a85993.png" alt="">
+                </div>
+                <div class="slider__description">
+                  <h4>Don't Hide - Single</h4>
+                  <p>Mike Perry & Willump Scott Nunu</p>
+                </div>
+              </div>
+              <div class="slider__card">
+                <div class="slider__image">
+                  <img src="./images/8dabb43e97feaa0cd847351431ccaa5bf0a85993.png" alt="">
+                </div>
+                <div class="slider__description">
+                  <h4>Don't Hide - Single</h4>
+                  <p>Mike Perry & Willump Scott Nunu</p>
+                </div>
+              </div>
+              <div class="slider__card">
+                <div class="slider__image">
+                  <img src="./images/8dabb43e97feaa0cd847351431ccaa5bf0a85993.png" alt="">
+                </div>
+                <div class="slider__description">
+                  <h4>Don't Hide - Single</h4>
+                  <p>Mike Perry & Willump Scott Nunu</p>
+                </div>
+              </div>
+              <div class="slider__card">
+                <div class="slider__image">
+                  <img src="./images/8dabb43e97feaa0cd847351431ccaa5bf0a85993.png" alt="">
+                </div>
+                <div class="slider__description">
+                  <h4>Don't Hide - Single</h4>
+                  <p>Mike Perry & Willump Scott Nunu</p>
+                </div>
+              </div>
+              <div class="slider__card">
+                <div class="slider__image">
+                  <img src="./images/8dabb43e97feaa0cd847351431ccaa5bf0a85993.png" alt="">
+                </div>
+                <div class="slider__description">
+                  <h4>Don't Hide - Single</h4>
+                  <p>Mike Perry & Willump Scott Nunu</p>
+                </div>
+              </div>
+              <div class="slider__card">
+                <div class="slider__image">
+                  <img src="./images/8dabb43e97feaa0cd847351431ccaa5bf0a85993.png" alt="">
+                </div>
+                <div class="slider__description">
+                  <h4>Don't Hide - Single</h4>
+                  <p>Mike Perry & Willump Scott Nunu</p>
+                </div>
+              </div>
+              <div class="slider__card">
+                <div class="slider__image">
+                  <img src="./images/8dabb43e97feaa0cd847351431ccaa5bf0a85993.png" alt="">
+                </div>
+                <div class="slider__description">
+                  <h4>Don't Hide - Single</h4>
+                  <p>Mike Perry & Willump Scott Nunu</p>
+                </div>
+              </div>
+              <div class="slider__card">
+                <div class="slider__image">
+                  <img src="./images/8dabb43e97feaa0cd847351431ccaa5bf0a85993.png" alt="">
+                </div>
+                <div class="slider__description">
+                  <h4>Don't Hide - Single</h4>
+                  <p>Mike Perry & Willump Scott Nunu</p>
+                </div>
+              </div>
+              <div class="slider__card">
+                <div class="slider__image">
+                  <img src="./images/8dabb43e97feaa0cd847351431ccaa5bf0a85993.png" alt="">
+                </div>
+                <div class="slider__description">
+                  <h4>Don't Hide - Single</h4>
+                  <p>Mike Perry & Willump Scott Nunu</p>
+                </div>
+              </div>
+              <div class="slider__card">
+                <div class="slider__image">
+                  <img src="./images/8dabb43e97feaa0cd847351431ccaa5bf0a85993.png" alt="">
+                </div>
+                <div class="slider__description">
+                  <h4>Don't Hide - Single</h4>
+                  <p>Mike Perry & Willump Scott Nunu</p>
+                </div>
+              </div>
+              <div class="slider__card">
+                <div class="slider__image">
+                  <img src="./images/8dabb43e97feaa0cd847351431ccaa5bf0a85993.png" alt="">
+                </div>
+                <div class="slider__description">
+                  <h4>Don't Hide - Single</h4>
+                  <p>Mike Perry & Willump Scott Nunu</p>
+                </div>
+              </div>
+              <div class="slider__card">
+                <div class="slider__image">
+                  <img src="./images/8dabb43e97feaa0cd847351431ccaa5bf0a85993.png" alt="">
+                </div>
+                <div class="slider__description">
+                  <h4>Don't Hide - Single</h4>
+                  <p>Mike Perry & Willump Scott Nunu</p>
+                </div>
+              </div>
+              <div class="slider__card">
+                <div class="slider__image">
+                  <img src="./images/8dabb43e97feaa0cd847351431ccaa5bf0a85993.png" alt="">
+                </div>
+                <div class="slider__description">
+                  <h4>Don't Hide - Single</h4>
+                  <p>Mike Perry & Willump Scott Nunu</p>
+                </div>
+              </div>
+              <div class="slider__card">
+                <div class="slider__image">
+                  <img src="./images/8dabb43e97feaa0cd847351431ccaa5bf0a85993.png" alt="">
+                </div>
+                <div class="slider__description">
+                  <h4>Don't Hide - Single</h4>
+                  <p>Mike Perry & Willump Scott Nunu</p>
+                </div>
+              </div>
+              <div class="slider__card">
+                <div class="slider__image">
+                  <img src="./images/8dabb43e97feaa0cd847351431ccaa5bf0a85993.png" alt="">
+                </div>
+                <div class="slider__description">
+                  <h4>Don't Hide - Single</h4>
+                  <p>Mike Perry & Willump Scott Nunu</p>
+                </div>
+              </div>
+              <div class="slider__card">
+                <div class="slider__image">
+                  <img src="./images/8dabb43e97feaa0cd847351431ccaa5bf0a85993.png" alt="">
+                </div>
+                <div class="slider__description">
+                  <h4>Don't Hide - Single</h4>
+                  <p>Mike Perry & Willump Scott Nunu</p>
+                </div>
+              </div>
+              <div class="slider__card">
+                <div class="slider__image">
+                  <img src="./images/8dabb43e97feaa0cd847351431ccaa5bf0a85993.png" alt="">
+                </div>
+                <div class="slider__description">
+                  <h4>Don't Hide - Single</h4>
+                  <p>Mike Perry & Willump Scott Nunu</p>
+                </div>
+              </div>
+              <div class="slider__card">
+                <div class="slider__image">
+                  <img src="./images/8dabb43e97feaa0cd847351431ccaa5bf0a85993.png" alt="">
+                </div>
+                <div class="slider__description">
+                  <h4>Don't Hide - Single</h4>
+                  <p>Mike Perry & Willump Scott Nunu</p>
+                </div>
+              </div>
+              <div class="slider__card">
+                <div class="slider__image">
+                  <img src="./images/8dabb43e97feaa0cd847351431ccaa5bf0a85993.png" alt="">
+                </div>
+                <div class="slider__description">
+                  <h4>Don't Hide - Single</h4>
+                  <p>Mike Perry & Willump Scott Nunu</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
     <div class="control"></div>
   </div>
 </body>
